@@ -14,9 +14,9 @@ interface Props {
 export default function Itens(props: Props) {
   const [lista, setLista] = useState(cardapio);
   const { busca, filtro, ordenador } = props;
-  function testaBusca(title: string) {
+  function testaBusca(description: string) {
     const regex = new RegExp(busca, 'i');
-    return regex.test(title);
+    return regex.test(description);
   }
   function testaFiltro(id: number) {
     if (filtro !== null) return filtro === id;
@@ -37,7 +37,7 @@ export default function Itens(props: Props) {
 
   useEffect(() => {
     const novaLista = cardapio.filter(item =>
-      testaBusca(item.title) &&
+      testaBusca(item.description) &&
       testaFiltro(item.category.id));
     setLista(ordenar(novaLista));
   }, [busca, filtro, ordenador]);
