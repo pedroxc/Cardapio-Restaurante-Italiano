@@ -15,14 +15,16 @@ export default function Sobre() {
         <img alt="Casa Aluroni" src={casa} />
         <div className={styles.sobreNos__texto}>
           <p>
-            Nós do Aluroni oferecemos a vocês, nossos queridos clientes, a Massa Italiana Caseira mais saborosa e sofisticada de São Paulo! Prezamos pelos ingredientes tradicionais da culinária Italiana, frescos e de excelente qualidade para que sua experiência seja ainda mais intensa!
+          Pagina web criada durante os cursos:REACT: LIDANDO COM ARQUIVOS ESTÁTICOS da alura e React: conhecendo a biblioteca React Router 
           </p>
           <p>
-            Também possuímos uma cardápio de carnes com muitas opções de acordo com o seu gosto!
+            Feito por:<a href={'https://pedrocoelhoportfolio.netlify.app/'}> Pedro Xavier Coelho</a>
           </p>
-          <p>
-            Para acompanhar as massas italianas, Aluroni possui uma reserva de vinhos especiais, que harmonizam perfeitamente com o seu parto, seja carne ou massa!
-          </p>
+          
+          <p><a href={'https://cursos.alura.com.br/certificate/pedroxaviercoelho/react-biblioteca-react-router'}>
+          Certificado
+          </a></p>
+          
         </div>
       </div>
       <div className={styles.imagens}>
